@@ -1,1 +1,13 @@
 https://imgur.com/a/nKQ7gOj
+1) The web browser asks to the DNS resolver an IP address corresponding the record via a web server
+2) The web browser gets back the IP address needed via the web server
+3) The web browser gets finally the static web site needed via the web browser
+4) The web browser requests the server with the corresponding IP address via the web server
+5) The web server asks the DNS resolver the IP address for given DNS record
+6) The DNS resolver responds with a good IP address
+7) The web server requests the server with the corresponding IP address
+8) The web server gets the HTML/CSS (static web site) code from the corresponding server
+9) The HAProxy load balancer server sends a request to the one of the two available server
+10) The HAProxy load balancer gets back the result like a static web site
+11) At runtime the application requests data from Database
+12) At runtime the application gets back the data needed
