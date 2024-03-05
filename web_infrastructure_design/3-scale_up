@@ -1,1 +1,7 @@
 https://imgur.com/a/u5OXoTd
+1) The web server requests the need server via a HAProxy server
+2) The web server will get back the static web server
+3) Finally,the request reachs the application server
+4) The app server responds via HAProxy server
+5) At runtime the application requests the Database
+6) Database responds back the application
